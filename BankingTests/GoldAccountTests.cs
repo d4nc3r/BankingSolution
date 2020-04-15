@@ -14,6 +14,7 @@ namespace BankingTests
             var account = new BankAccount();
             var originalBalance = account.GetBalance();
             var amountToDeposit = 100M;
+            account.AccountType = AccountType.Gold;
 
             account.Deposit(amountToDeposit);
 
